@@ -38,7 +38,7 @@
 
 ## 🚀 Shipped Systems & Deep-Tech Projects
 
-### 1. [Dokai V2](https://github.com/TestingGuyz/Dokai_V2) — Dual-Pass Clinical Vision & Medical Reasoning Pipeline
+### 1. Dokai V2 — Dual-Pass Clinical Vision & Medical Reasoning Pipeline
 - **Overview**: Medical AI system for hospital bill auditing (fraud/overcharging detection), lab report analysis, and clinical symptom checking.
 - **Architecture**:
   - *Pass 1 (Vision)*: Google MedGemma 4B transforms unstructured lab reports and bills into structured clinical vectors.
@@ -55,7 +55,8 @@
   - *Computer Vision Grading*: Automated OCR evaluation of handwritten student exam sheets.
   - *Voice Tutoring*: Streaming bilingual Hindi/English explanations powered by Sarvam Bulbul V3.
 
-### 3. RAKSHA — 5-Layer Offline Degradation Disaster-Response Platform
+### 3. [RAKSHA](https://github.com/EgoisticCoder/RAKSHA.git) — 5-Layer Offline Degradation Disaster-Response Platform
+- **Repository**: [github.com/EgoisticCoder/RAKSHA.git](https://github.com/EgoisticCoder/RAKSHA.git)
 - **Overview**: Mission-critical emergency system designed for disaster scenarios where power grids, internet, and cellular towers have completely collapsed.
 - **Degradation Stack**:
   - *Layer 1*: Local Area WebSockets (LAN multi-cast).
@@ -64,7 +65,8 @@
   - *Layer 4*: 4 Autonomous Coordination Agents (BullMQ + Redis: Route Hazard Resolver, Resource Triage Allocator, Medical Dispatcher, Network Arbiter).
   - *Layer 5*: Neo4j dynamic evacuation graph (topological flood zone routing + offline SQLite replica).
 
-### 4. ARIA Rover — Autonomous Disaster Rover with 9-Model Edge AI Stack
+### 4. [ARIA Rover](https://github.com/EgoisticCoder/ARIA_Robotics.git) — Autonomous Disaster Rover with 9-Model Edge AI Stack
+- **Repository**: [github.com/EgoisticCoder/ARIA_Robotics.git](https://github.com/EgoisticCoder/ARIA_Robotics.git)
 - **Hardware**: Radxa Cubie A7Z single-board computer (NPU INT8 accelerator) + Arduino UNO Q.
 - **Overview**: Dual-compute edge robotics engineered for rugged, subterranean disaster debris.
 - **Architecture**:
@@ -72,29 +74,33 @@
   - Custom dataset collected and annotated for rubble traversability costmap estimation.
   - Zero cloud dependency — 100% autonomous edge decision-making.
 
-### 5. [Military Vision Car](https://github.com/TestingGuyz/MPBlitz-25_Spy_Military_Car_Final) — ESP32-CAM Surveillance Reconnaissance Rover
+### 5. Military Vision Car — ESP32-CAM Surveillance Reconnaissance Rover
 - **Hardware**: ESP32-CAM, NEO-6M GPS, L298N Motor Driver, Li-Ion 18650 pack.
 - **Pipeline**: 20+ Roboflow-trained detection models (90%+ accuracy) with two-stage verification (Edge Non-Maximum Suppression + Gemini AI false-positive elimination) and real-time GPS coordinate streaming over encrypted WebSockets.
 - **Accolade**: 🥈 2nd Place — MPBlitz '25.
 
-### 6. [Forma & QiFu-v1](https://huggingface.co/EgoisticCoder) — Vision-Language UI/UX Engineering Assistant
+### 6. [Forma & QiFu-v1](https://github.com/EgoisticCoder/Project_Infra) — Vision-Language UI/UX Engineering Assistant
+- **Repository**: [github.com/EgoisticCoder/Project_Infra](https://github.com/EgoisticCoder/Project_Infra)
 - **Models**: Fine-tuned Qwen3-VL-4B via QLoRA; published open-weight *QiFu-v1* adapter and dataset on Hugging Face.
 - **Pipeline**: Automated headless browser testing identifying accessibility defects, responsive breakage, and contrast violations, synthesizing direct Tailwind CSS remediation patches.
 
 ### 7. [NeoPet](https://github.com/EgoisticCoder/NeoPet-Virtual-Pet-Web-App.git) — AI-Powered Conversational Virtual Pet
+- **Repository**: [github.com/EgoisticCoder/NeoPet-Virtual-Pet-Web-App.git](https://github.com/EgoisticCoder/NeoPet-Virtual-Pet-Web-App.git)
 - **Build Time**: Built from scratch in ~1.5 hours during X Celsior '26 X-Hack.
 - **Stack**: Groq LLaMA-3 real-time emotion engine, ElevenLabs streaming voice synthesis, Firebase Realtime state, XP progression economy, and 3 interactive canvas mini-games.
 - **Accolade**: 🥇 1st Place Champion — X-Hack.
 
-### 8. [Moi](https://github.com/TestingGuyz/Moi_Developing) — Real-Time Visual Perception & Narration Engine
+### 8. Moi — Real-Time Visual Perception & Narration Engine
 - **Overview**: An AI system that sees and speaks about dynamic scenes in real time.
 - **Stack**: Meta DINOv3 self-supervised vision segmentation backbone paired with Gemini Live bidirectional multimodal streaming audio narration.
 
-### 9. HANUMAN — Autonomous Voice Assistant on Raspberry Pi Zero 2W
+### 9. [HANUMAN](https://github.com/EgoisticCoder/Hanuman_Basic.git) — Autonomous Voice Assistant on Raspberry Pi Zero 2W
+- **Repository**: [github.com/EgoisticCoder/Hanuman_Basic.git](https://github.com/EgoisticCoder/Hanuman_Basic.git)
 - **Hardware**: Raspberry Pi Zero 2W (512MB RAM), I2S digital microphone array, PAM8403 DAC amplifier.
 - **Pipeline**: On-device neural wake-word detection, ElevenLabs low-latency voice synthesis, and real-time live web query parsing.
 
-### 10. AgroXpert — Autonomous Agricultural Precision Rover
+### 10. [AgroXpert](https://github.com/EgoisticCoder/AgroXpert.git) — Autonomous Agricultural Precision Rover
+- **Repository**: [github.com/EgoisticCoder/AgroXpert.git](https://github.com/EgoisticCoder/AgroXpert.git)
 - **Hardware**: ESP32, multi-spectral optical camera, RS485 soil NPK sensors, LoRa 433MHz telemetry.
 - **Pipeline**: Edge plant disease detection (YOLO leaf blight classifier), soil conductivity telemetry, and autonomous crop row navigation.
 - **Accolade**: 🏅 4th Place Statewide — Smart Bengal Hackathon '26.
@@ -133,7 +139,7 @@
 
 - **Email**: [egoisticcoderx@gmail.com](mailto:egoisticcoderx@gmail.com)
 - **LinkedIn**: [linkedin.com/in/egoistic-coderx](https://linkedin.com/in/egoistic-coderx)
-- **GitHub**: [github.com/EgoisticCoder](https://github.com/EgoisticCoder) · [github.com/TestingGuyz](https://github.com/TestingGuyz)
+- **GitHub**: [github.com/EgoisticCoder](https://github.com/EgoisticCoder)
 - **Hugging Face**: [huggingface.co/EgoisticCoder](https://huggingface.co/EgoisticCoder)
 - **Portfolio Website**: [abhinav-gupta.vercel.app](https://abhinav-gupta.vercel.app)
 

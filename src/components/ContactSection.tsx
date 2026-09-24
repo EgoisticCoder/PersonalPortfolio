@@ -124,18 +124,7 @@ export const ContactSection: React.FC = () => {
                 className="inline-flex items-center gap-1 hover:text-[#002B36] transition-colors"
               >
                 <Github className="w-3.5 h-3.5 text-[#073642]" />
-                <span>GitHub (Personal)</span>
-                <ArrowUpRight className="w-3 h-3 text-[#93A1A1]" />
-              </a>
-              <span aria-hidden="true" className="text-[#93A1A1]">·</span>
-              <a
-                href={PERSONAL_INFO.githubTestingGuyz}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1 hover:text-[#002B36] transition-colors"
-              >
-                <Github className="w-3.5 h-3.5 text-[#073642]" />
-                <span>GitHub (Lab)</span>
+                <span>GitHub</span>
                 <ArrowUpRight className="w-3 h-3 text-[#93A1A1]" />
               </a>
               <span aria-hidden="true" className="text-[#93A1A1]">·</span>

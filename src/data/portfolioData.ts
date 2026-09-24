@@ -13,7 +13,6 @@ export const PERSONAL_INFO = {
   totalProjectsCount: '36+',
   email: 'egoisticcoderx@gmail.com',
   github: 'https://github.com/EgoisticCoder',
-  githubTestingGuyz: 'https://github.com/TestingGuyz',
   linkedin: 'https://linkedin.com/in/egoistic-coderx',
   huggingface: 'https://huggingface.co/EgoisticCoder',
   huggingfaceAlt: 'https://huggingface.co/EgoisticCoderX',
@@ -39,7 +38,6 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['Python', 'MedGemma 4B', 'LLaMA 3', 'OpenCV', 'PyTorch', 'FastAPI', 'Android'],
     models: ['Google MedGemma 4B', 'Meta LLaMA 3 8B', 'Sarvam Bulbul TTS'],
-    githubUrl: 'https://github.com/TestingGuyz/Dokai_V2',
     systemMetrics: [
       { label: 'Vision Model', value: 'MedGemma 4B' },
       { label: 'Pipeline Passes', value: '2-Stage Vision+Reasoning' },
@@ -108,6 +106,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['BLE Mesh', 'Neo4j', 'BullMQ', 'Redis', 'Twilio', 'TypeScript', 'Vite', 'Python'],
     models: ['Autonomous Agent Triad', 'Sarvam Voice SOS', 'Spatial Routing Model'],
+    githubUrl: 'https://github.com/EgoisticCoder/RAKSHA.git',
     accolade: 'HACKHAZARDS 2026 Build — Extended to 12-Month Multi-Agent Deployment',
     systemMetrics: [
       { label: 'Degradation Stack', value: '5 Fallback Layers' },
@@ -143,6 +142,7 @@ export const PROJECTS: Project[] = [
     techStack: ['Radxa Cubie A7Z', 'Arduino UNO Q', 'YOLOv8', 'PyTorch', 'OpenCV', 'C++', 'Python'],
     models: ['YOLOv8 NPU Edge', 'Custom Traversability Net', 'Compact VLM Fallback'],
     hardware: ['Radxa Cubie A7Z', 'Arduino UNO Q', 'Dual Wide-Angle Cameras', 'Ultrasonic Array'],
+    githubUrl: 'https://github.com/EgoisticCoder/ARIA_Robotics.git',
     accolade: 'Built for Robu.in × Arduino Contest',
     systemMetrics: [
       { label: 'AI Inference Stack', value: '9 On-Device Models' },
@@ -177,6 +177,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['Qwen3-VL-4B', 'QLoRA', 'PyTorch', 'Hugging Face', 'Next.js', 'Playwright'],
     models: ['QiFu-v1 (Custom)', 'Qwen3-VL-4B Base', 'Forma-v1-LoRA'],
+    githubUrl: 'https://github.com/EgoisticCoder/Project_Infra',
     huggingFaceUrl: 'https://huggingface.co/EgoisticCoder',
     systemMetrics: [
       { label: 'Model Weights', value: 'Hugging Face Public' },
@@ -212,7 +213,6 @@ export const PROJECTS: Project[] = [
     techStack: ['ESP32-CAM', 'Roboflow CV', 'Gemini AI', 'GPS Module', 'WebSockets', 'C++', 'Python'],
     models: ['20+ Roboflow Custom Models', 'Gemini Vision Verifier'],
     hardware: ['ESP32-CAM', 'NEO-6M GPS', 'L298N Motor Driver', 'Li-Ion 18650 Battery Pack'],
-    githubUrl: 'https://github.com/TestingGuyz/MPBlitz-25_Spy_Military_Car_Final',
     accolade: '🥈 2nd Place Podium — MPBlitz 2025',
     systemMetrics: [
       { label: 'Detection Models', value: '20+ Roboflow' },
@@ -281,7 +281,6 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['DINOv3', 'Gemini Live API', 'PyTorch', 'OpenCV', 'WebSockets', 'Python'],
     models: ['Meta DINOv3', 'Gemini Live Multimodal'],
-    githubUrl: 'https://github.com/TestingGuyz/Moi_Developing',
     systemMetrics: [
       { label: 'Vision Backbone', value: 'Meta DINOv3' },
       { label: 'Narration Engine', value: 'Gemini Live Multimodal' },
@@ -315,6 +314,7 @@ export const PROJECTS: Project[] = [
     techStack: ['Raspberry Pi Zero 2W', 'Python', 'ElevenLabs', 'Porcupine Wake Word', 'Linux Audio ALSA'],
     models: ['Neural Wake Word Engine', 'ElevenLabs STT/TTS'],
     hardware: ['Raspberry Pi Zero 2W', 'I2S Microphone Array', 'PAM8403 DAC Amplifier'],
+    githubUrl: 'https://github.com/EgoisticCoder/Hanuman_Basic.git',
     systemMetrics: [
       { label: 'Host Board', value: 'RPi Zero 2W (512MB)' },
       { label: 'Wake Detection', value: 'On-Device Zero-Cloud' },
@@ -348,6 +348,7 @@ export const PROJECTS: Project[] = [
     techStack: ['ESP32', 'Arduino', 'YOLO Tiny', 'Soil NPK Sensors', 'LoRa', 'Python HUD'],
     models: ['YOLO Leaf Blight Classifier'],
     hardware: ['ESP32', 'NPK Soil Sensor', 'Geared DC Motors', 'Solar Trickle Panel'],
+    githubUrl: 'https://github.com/EgoisticCoder/AgroXpert.git',
     accolade: '🏅 4th Place Statewide — Smart Bengal Hackathon 2026',
     systemMetrics: [
       { label: 'Statewide Rank', value: '4th Place Finalist' },
