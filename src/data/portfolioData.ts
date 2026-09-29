@@ -3,14 +3,19 @@ import { Project, Competition, RoleRecognition, HardwareSpec } from '../types';
 export const PERSONAL_INFO = {
   name: 'Abhinav Gupta',
   alias: 'EgoisticCoder',
+  nickname: 'Abhi',
   age: 14,
   location: 'Kolkata, India',
   school: 'M. P. Birla Foundation Higher Secondary School',
+  schoolClub: 'LMNTR1X Computer Club (Core Member)',
   grade: 'Class 9 (ICSE)',
   title: 'AI/ML Research Engineer (in training) · Robotics & Embedded Systems',
-  bio: 'At 14, I don’t just study AI — I ship it. Built 36+ projects across IoT, AI/ML, embedded systems, and full-stack software. I take projects from idea to working system, end-to-end: inference pipelines, embedded hardware, and the full-stack layer that ships them. Long-term target: AI/ML research engineering.',
-  statement: 'I build production-grade intelligent systems end-to-end: model training, edge deployment, hardware integration, and live interfaces. 36+ projects shipped solo.',
+  subtitle: 'Full Stack AI/ML Developer · IoT & Automation · Computer Vision',
+  motto: 'Building solo; coding like never before.',
+  bio: 'At 14, I don’t just study AI — I ship it. Building solo; coding like never before. In 2 years, shipped 36+ projects across IoT & automation, computer vision, AI/ML, robotics, embedded systems, and full-stack software. Long-term target: AI/ML research engineering. Future is still left to be written.',
+  statement: 'I build production-grade intelligent systems end-to-end: model training, edge deployment, hardware integration, and live interfaces. 36+ projects shipped solo across 6 domains in 2 years.',
   totalProjectsCount: '36+',
+  linkedInConnections: '750+',
   email: 'egoisticcoderx@gmail.com',
   github: 'https://github.com/EgoisticCoder',
   linkedin: 'https://linkedin.com/in/egoistic-coderx',
@@ -466,6 +471,44 @@ export const ROLES_AND_RECOGNITION: RoleRecognition[] = [
       'Participating in community hackathons and technical discussions',
     ],
     tag: 'Research Community',
+  },
+  {
+    title: 'Event Head (Web Dev) & Co-Head (Robotics)',
+    organization: 'Technovation \'26 (Inter-School Tech Fest)',
+    period: '2026',
+    description:
+      'Leading technical event governance for Technovation \'26: formulating problem statements, runtime evaluation criteria, and judging metrics for the Web Development and Autonomous Robotics competitive tracks.',
+    highlights: [
+      'Authored event technical frameworks and live problem statements for high-school cohorts',
+      'Designed autonomous robotics arena constraints, obstacle courses, and sensor specifications',
+      'Mentored participants across algorithmic problem solving and web application architecture',
+    ],
+    tag: 'Fest Leadership',
+  },
+  {
+    title: 'Core Member — LMNTR1X Computer Club',
+    organization: 'M. P. Birla Foundation H.S. School (MPBFHSS)',
+    period: '2024 – Present',
+    description:
+      'Core leadership team member of LMNTR1X, the official computer science society of MPBFHSS. Directs competitive coding delegations, hackathon teams, and student robotics project builds.',
+    highlights: [
+      'Representing MPBFHSS at premier inter-school hackathons and robotics contests',
+      'Conducting peer mentoring workshops in AI/ML fundamentals and Python development',
+      'Leading software development and technical event infrastructure for school activities',
+    ],
+    tag: 'School CS Leadership',
+  },
+  {
+    title: 'Core Community Member',
+    organization: 'CODE Community',
+    period: 'Current',
+    description:
+      'Core active member within the CODE developer collective, collaborating on open-source machine learning tools, full-stack architectures, and developer knowledge sharing.',
+    highlights: [
+      'Collaborating on open-source machine learning and agentic tool implementations',
+      'Active participant in technical code reviews, design critiques, and builder jams',
+    ],
+    tag: 'Developer Collective',
   },
 ];
 

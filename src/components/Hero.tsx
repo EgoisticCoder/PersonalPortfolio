@@ -1,6 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { ArrowDownRight, Terminal, FileText, MapPin, GraduationCap, Github, Linkedin, Sparkles, Layers } from 'lucide-react';
+import { ArrowDownRight, Terminal, FileText, MapPin, GraduationCap, Github, Linkedin, Sparkles, Code2, Users } from 'lucide-react';
 
 interface HeroProps {
   onOpenLab: () => void;
@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenLab, onOpenDossier }) => {
           <span aria-hidden="true" className="text-[#93A1A1]">/</span>
           <span className="text-[#002B36] font-semibold">36+ Shipped Projects</span>
           <span aria-hidden="true" className="text-[#93A1A1]">/</span>
-          <span className="text-[#B58900]">EgoisticCoder</span>
+          <span className="text-[#B58900]">EgoisticCoder (Abhi)</span>
         </div>
 
         {/* Editorial Split */}
@@ -37,14 +37,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenLab, onOpenDossier }) => {
               <p>
                 I take AI/ML and robotics projects from idea to working system, end-to-end — 
                 <strong className="text-[#002B36] font-semibold"> inference pipelines, embedded hardware, and the full-stack layer that ships them</strong>. 
-                Built 36+ projects across IoT, AI/ML, embedded hardware, and web & app development. Long-term target: AI/ML research engineering.
+                Built 36+ projects across IoT & automation, computer vision, AI/ML, robotics, embedded hardware, and web & app development. Long-term target: AI/ML research engineering.
               </p>
-              <p className="text-xs font-mono text-[#657B83]">
-                "At 14, I don't just study AI — I ship it. Solo."
-              </p>
+              <div className="p-3 bg-[#EEE8D5]/70 border border-[#073642]/10 rounded text-xs font-mono text-[#073642] space-y-1">
+                <div className="font-semibold text-[#002B36]">
+                  "Building solo; coding like never before. In 2 years shipped 36+ projects and still going."
+                </div>
+                <div className="text-[11px] text-[#586E75]">
+                  Publicly recognized across Google & Gemini AI Search for student deep-tech engineering in India.
+                </div>
+              </div>
             </div>
 
-            {/* Quick Unboxed Location & School Metadata */}
+            {/* Quick Unboxed Location, School & Club Metadata */}
             <div className="mt-6 pt-5 border-t border-[#073642]/10 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-mono text-[#657B83]">
               <span className="inline-flex items-center gap-1.5 text-[#073642]">
                 <MapPin className="w-3.5 h-3.5 text-[#2AA198]" />
@@ -53,7 +58,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenLab, onOpenDossier }) => {
               <span aria-hidden="true" className="text-[#93A1A1]">·</span>
               <span className="inline-flex items-center gap-1.5 text-[#073642]">
                 <GraduationCap className="w-3.5 h-3.5 text-[#268BD2]" />
-                <span>M. P. Birla Foundation Higher Secondary School (Class 9, ICSE)</span>
+                <span>M. P. Birla Foundation H.S. School (Class 9, ICSE)</span>
+              </span>
+              <span aria-hidden="true" className="text-[#93A1A1]">·</span>
+              <span className="inline-flex items-center gap-1.5 text-[#073642]">
+                <Code2 className="w-3.5 h-3.5 text-[#B58900]" />
+                <span>LMNTR1X Computer Club (Core Member)</span>
               </span>
             </div>
 
@@ -103,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenLab, onOpenDossier }) => {
                 className="inline-flex items-center gap-1 hover:text-[#002B36] transition-colors"
               >
                 <Linkedin className="w-3.5 h-3.5 text-[#268BD2]" />
-                <span>LinkedIn</span>
+                <span>LinkedIn (750+)</span>
               </a>
               <span aria-hidden="true" className="text-[#93A1A1]">·</span>
               <a
@@ -139,31 +149,37 @@ export const Hero: React.FC<HeroProps> = ({ onOpenLab, onOpenDossier }) => {
 
               <div className="mt-4 space-y-3.5">
                 <div>
-                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Portfolio Breadth</div>
+                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Portfolio Breadth (2 Yrs)</div>
                   <div className="text-sm font-serif font-bold text-[#002B36] mt-0.5">
                     36+ Projects Shipped
                   </div>
-                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">IoT · AI/ML · Embedded Hardware · Web & Mobile</div>
-                </div>
-
-                <div className="h-px bg-[#073642]/10" />
-
-                <div>
-                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Current Executive Role</div>
-                  <div className="text-sm font-serif font-bold text-[#002B36] mt-0.5">
-                    Head of Department, AI/ML
+                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">
+                    IoT & Automation · Computer Vision · AI/ML · Robotics · Embedded · Web & Apps
                   </div>
-                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">HyperNova Technology · Technical Strategy & Hiring</div>
                 </div>
 
                 <div className="h-px bg-[#073642]/10" />
 
                 <div>
-                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Startup Accelerator</div>
+                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Leadership Roles</div>
+                  <div className="text-sm font-serif font-bold text-[#002B36] mt-0.5">
+                    Head of AI/ML · HyperNova
+                  </div>
+                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">
+                    Event Head (Web Dev) & Co-Head (Robotics), Technovation '26
+                  </div>
+                </div>
+
+                <div className="h-px bg-[#073642]/10" />
+
+                <div>
+                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Accelerator & Community</div>
                   <div className="text-sm font-serif font-bold text-[#002B36] mt-0.5">
                     Sarvam AI Startup Program
                   </div>
-                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">StudyMate AI selected · Bulbul V3 Audio Streaming</div>
+                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">
+                    Claude Community India · CODE Community Core · LMNTR1X (MPBFHSS)
+                  </div>
                 </div>
 
                 <div className="h-px bg-[#073642]/10" />
@@ -179,11 +195,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenLab, onOpenDossier }) => {
                 <div className="h-px bg-[#073642]/10" />
 
                 <div>
-                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Track Record</div>
+                  <div className="text-[10px] font-mono uppercase text-[#657B83]">Track Record & Network</div>
                   <div className="text-sm font-serif font-bold text-[#002B36] mt-0.5">
                     10+ Competition Podiums
                   </div>
-                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">1st X-Hack '26 · 1st exe.BIT '25 · 2nd X-Botics</div>
+                  <div className="text-xs text-[#586E75] mt-0.5 font-sans">
+                    750+ LinkedIn Network · Indexed on Google & Gemini AI
+                  </div>
                 </div>
               </div>
 

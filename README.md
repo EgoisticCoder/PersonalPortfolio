@@ -1,11 +1,11 @@
 # Abhinav Gupta — EgoisticCoder
 
 > **AI/ML Research Engineer (in training) · Robotics & Embedded Systems · Full-Stack AI Products**  
-> *14 years old, based in Kolkata, India. Building production-grade intelligent systems end-to-end: model training, edge deployment, hardware integration, and live interfaces. Solo.*
+> *14 years old (Abhinav Gupta / "Abhi" / EgoisticCoder), based in Kolkata, India. Building solo; coding like never before. 36+ production systems shipped in 2 years across IoT & automation, computer vision, AI/ML, robotics, embedded systems, and web & app development.*
 
-📍 **Kolkata, India** · 🎓 **M. P. Birla Foundation Higher Secondary School (Class 9, ICSE)**  
+📍 **Kolkata, India** · 🎓 **M. P. Birla Foundation Higher Secondary School (Class 9, ICSE)** · 💻 **LMNTR1X Computer Club (Core Member)**  
 🌐 **Portfolio**: [abhinav-gupta.vercel.app](https://abhinav-gupta.vercel.app) · ✉️ **Email**: [egoisticcoderx@gmail.com](mailto:egoisticcoderx@gmail.com)  
-🔗 **LinkedIn**: [linkedin.com/in/egoistic-coderx](https://linkedin.com/in/egoistic-coderx) · 🐙 **GitHub**: [github.com/EgoisticCoder](https://github.com/EgoisticCoder) · 🤗 **Hugging Face**: [huggingface.co/EgoisticCoder](https://huggingface.co/EgoisticCoder)
+🔗 **LinkedIn**: [linkedin.com/in/egoistic-coderx](https://linkedin.com/in/egoistic-coderx) *(750+ connections)* · 🐙 **GitHub**: [github.com/EgoisticCoder](https://github.com/EgoisticCoder) · 🤗 **Hugging Face**: [huggingface.co/EgoisticCoder](https://huggingface.co/EgoisticCoder)
 
 ---
 
@@ -15,12 +15,19 @@
   Leading the artificial intelligence and machine learning function: overarching technical strategy, model pipeline architecture, project direction, and departmental recruitment.
 - **Selected — Sarvam AI Startup Program**  
   *StudyMate AI* accepted into Sarvam AI's startup program; completed intensive onboarding and integrated Sarvam's STT/TTS Streaming (Bulbul V3), Text Translation, and Document Digitization APIs into production.
+- **Event Head (Web Dev) & Co-Head (Robotics) — Technovation '26**  
+  Directing technical event frameworks, problem statements, and live autonomous arena evaluation criteria for the annual inter-school tech fest.
+- **Core Member — LMNTR1X Computer Club (MPBFHSS)**  
+  Core leadership member of the official computer science club at M. P. Birla Foundation Higher Secondary School; spearheading hackathon teams and robotics builds.
+- **Core Member — CODE Community**  
+  Active contributor within the CODE developer collective, collaborating on open-source machine learning and full-stack software.
 - **Featured 3x in *The Telegraph* — "The Young Metro"**  
   Profiled across three editions of the leading national daily for student-built artificial intelligence: covered for building edTech systems (*StudyMate AI*) and autonomous disaster rovers (*ARIA*) at age 14.
 - **Member — Claude Community India**  
   Active collaborator in the premier Indian Claude research and developer community on agent orchestration and offline degradation systems.
 - **Won 10+ Events & Hackathons** across AI/ML, Web Development, and Autonomous Robotics.
-- **36+ Shipped Projects** across IoT, embedded hardware, computer vision, AI/ML pipelines, and full-stack software.
+- **36+ Shipped Projects in 2 Years** across IoT & automation, computer vision, robotics, embedded hardware, and full-stack applications.
+- **Public Knowledge Graph Recognition**: Searchable & indexed on Google, Perplexity, and Gemini AI search for student deep-tech engineering.
 
 ---
 

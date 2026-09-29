@@ -1,6 +1,6 @@
 import React from 'react';
 import { ROLES_AND_RECOGNITION } from '../data/portfolioData';
-import { Newspaper, Building2, Rocket, Users, CheckCircle2, Quote } from 'lucide-react';
+import { Newspaper, Building2, Rocket, Users, CheckCircle2, Quote, Trophy, GraduationCap, Terminal } from 'lucide-react';
 
 export const RecognitionAndRoles: React.FC = () => {
   return (
@@ -14,16 +14,19 @@ export const RecognitionAndRoles: React.FC = () => {
             Roles & Recognition
           </h2>
           <p className="mt-2 text-sm sm:text-base text-[#586E75] max-w-2xl font-sans">
-            Trusted by startup accelerators, engineering firms, and premier national news publications to lead technical vision and execute edge AI.
+            Trusted by startup accelerators, engineering firms, school societies, and premier national news publications to lead technical vision and execute edge AI.
           </p>
         </div>
 
-        {/* 2x2 Grid of Roles & Features */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Dynamic Grid of Roles & Features */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {ROLES_AND_RECOGNITION.map((item, idx) => {
             const isPress = item.tag === 'Press Feature';
             const isStartup = item.tag === 'Startup Accelerator';
             const isExecutive = item.tag === 'Executive Leadership';
+            const isFest = item.tag === 'Fest Leadership';
+            const isSchool = item.tag === 'School CS Leadership';
+            const isDev = item.tag === 'Developer Collective';
 
             return (
               <div
@@ -45,12 +48,18 @@ export const RecognitionAndRoles: React.FC = () => {
                         <Rocket className="w-5 h-5 text-[#CB4B16]" />
                       ) : isExecutive ? (
                         <Building2 className="w-5 h-5 text-[#2AA198]" />
+                      ) : isFest ? (
+                        <Trophy className="w-5 h-5 text-[#B58900]" />
+                      ) : isSchool ? (
+                        <GraduationCap className="w-5 h-5 text-[#268BD2]" />
+                      ) : isDev ? (
+                        <Terminal className="w-5 h-5 text-[#6C71C4]" />
                       ) : (
-                        <Users className="w-5 h-5 text-[#6C71C4]" />
+                        <Users className="w-5 h-5 text-[#2AA198]" />
                       )}
                     </div>
                     <div>
-                      <h3 className="text-xl font-serif font-bold text-[#002B36]">
+                      <h3 className="text-lg font-serif font-bold text-[#002B36] leading-snug">
                         {item.title}
                       </h3>
                       <div className="text-xs font-semibold text-[#586E75] font-mono mt-0.5">

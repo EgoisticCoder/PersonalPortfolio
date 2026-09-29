@@ -1,6 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO, PROJECTS, COMPETITIONS, ROLES_AND_RECOGNITION, TECHNICAL_SKILLS } from '../data/portfolioData';
-import { Printer, Download, X, ExternalLink } from 'lucide-react';
+import { Printer, X, ExternalLink } from 'lucide-react';
 
 interface AcademicDossierModalProps {
   isOpen: boolean;
@@ -53,10 +53,13 @@ export const AcademicDossierModal: React.FC<AcademicDossierModalProps> = ({ isOp
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#002B36] uppercase font-serif">
               Abhinav Gupta
             </h1>
-            <p className="mt-1 text-sm font-sans text-[#586E75] font-medium">
-              AI/ML Developer · Robotics & Embedded Systems Engineer
+            <p className="mt-1 text-xs sm:text-sm font-sans text-[#586E75] font-semibold">
+              Alias: EgoisticCoder / "Abhi" · AI/ML Research Engineer (in training) · Robotics & Embedded Systems
             </p>
-            <div className="mt-2 text-xs font-mono text-[#657B83] flex flex-wrap justify-center gap-x-2 gap-y-1">
+            <p className="text-xs font-sans text-[#657B83] mt-0.5">
+              Full Stack AI/ML Developer · IoT & Automation · Computer Vision · Edge Computing
+            </p>
+            <div className="mt-3 text-xs font-mono text-[#657B83] flex flex-wrap justify-center gap-x-2 gap-y-1">
               <span>{PERSONAL_INFO.location}</span>
               <span>|</span>
               <a href={`mailto:${PERSONAL_INFO.email}`} className="text-[#073642] hover:underline">
@@ -64,7 +67,7 @@ export const AcademicDossierModal: React.FC<AcademicDossierModalProps> = ({ isOp
               </a>
               <span>|</span>
               <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noreferrer" className="text-[#073642] hover:underline">
-                linkedin.com/in/egoistic-coderx
+                linkedin.com/in/egoistic-coderx (750+ Connections)
               </a>
               <span>|</span>
               <a href={PERSONAL_INFO.github} target="_blank" rel="noreferrer" className="text-[#073642] hover:underline">
@@ -74,38 +77,71 @@ export const AcademicDossierModal: React.FC<AcademicDossierModalProps> = ({ isOp
               <a href={PERSONAL_INFO.huggingface} target="_blank" rel="noreferrer" className="text-[#073642] hover:underline">
                 huggingface.co/EgoisticCoder
               </a>
+              <span>|</span>
+              <a href={PERSONAL_INFO.portfolioSite} target="_blank" rel="noreferrer" className="text-[#073642] hover:underline">
+                abhinav-gupta.vercel.app
+              </a>
             </div>
           </div>
 
           {/* Section: Summary */}
           <div className="mt-6">
             <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
-              Summary
+              Executive Summary
             </h2>
             <p className="mt-2 text-xs sm:text-[13px] font-sans text-[#073642] leading-normal">
-              AI/ML developer and systems engineer building production-grade intelligent systems end-to-end — model training, edge deployment, hardware integration, and live interfaces. Shipped 36+ projects across IoT, AI/ML, embedded hardware, and software. Head of Department, AI/ML at HyperNova Technology. Accepted to Sarvam AI Startup Program. Winner of 10+ competitions across AI/ML, robotics, and web development. Long-term goal: AI/ML research engineering.
+              At 14, I don’t just study AI — I ship it. Building solo; coding like never before. In 2 years, engineered and shipped <strong>36+ production-grade systems</strong> across 6 primary technical domains: <em>IoT & Automation, Computer Vision, AI/ML, Robotics, Embedded Systems, and Full-Stack Software</em>. Head of Department, AI/ML at HyperNova Technology, directing technical strategy and recruitment. Selected founder in the prestigious Sarvam AI Startup Program with StudyMate AI. Winner of 10+ competitions and hackathons. Event Head (Web Dev) & Co-Head (Robotics) at Technovation '26. Core Member of LMNTR1X (MPBFHSS Computer Club) and CODE Community. Publicly indexed across Google and Gemini AI search for student deep-tech engineering.
             </p>
           </div>
 
-          {/* Section: Selected Projects */}
+          {/* Section: Roles & Leadership */}
           <div className="mt-6">
             <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
-              Selected Projects
+              Roles, Leadership & Community
+            </h2>
+            <div className="mt-2 space-y-2.5 text-xs font-sans text-[#073642]">
+              {ROLES_AND_RECOGNITION.map((item, idx) => (
+                <div key={idx} className="pb-2 border-b border-[#073642]/8 last:border-b-0">
+                  <div className="flex flex-wrap items-baseline justify-between gap-1">
+                    <span className="font-bold text-[#002B36]">
+                      {item.title} — {item.organization}
+                    </span>
+                    <span className="text-[11px] font-mono text-[#586E75]">
+                      {item.period} [{item.tag}]
+                    </span>
+                  </div>
+                  <p className="mt-0.5 text-xs text-[#073642] leading-snug">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Section: Selected Shipped Systems */}
+          <div className="mt-6">
+            <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
+              Selected Systems Architecture (Subset of 36+ Shipped)
             </h2>
             <div className="mt-3 space-y-3.5 text-xs sm:text-[13px] font-sans text-[#073642]">
-              {PROJECTS.slice(0, 6).map((proj) => (
-                <div key={proj.id}>
+              {PROJECTS.map((proj) => (
+                <div key={proj.id} className="pb-2 border-b border-[#073642]/8 last:border-b-0">
                   <div className="flex flex-wrap items-baseline justify-between gap-1">
                     <span className="font-bold text-[#002B36]">
                       {proj.title} — {proj.tagline.split('—')[0]}
                     </span>
                     <span className="text-[11px] italic text-[#586E75]">
-                      {proj.techStack.slice(0, 4).join(' · ')}
+                      {proj.techStack.slice(0, 5).join(' · ')}
                     </span>
                   </div>
                   <p className="mt-0.5 text-xs text-[#073642] leading-snug">
                     {proj.summary}
                   </p>
+                  <div className="mt-1 text-[11px] font-mono text-[#268BD2]">
+                    {proj.architectureHighlights.slice(0, 2).map((h, hIdx) => (
+                      <div key={hIdx}>▸ {h}</div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
@@ -114,52 +150,56 @@ export const AcademicDossierModal: React.FC<AcademicDossierModalProps> = ({ isOp
           {/* Section: Achievements & Recognition */}
           <div className="mt-6">
             <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
-              Achievements & Recognition
+              Achievements & Public Recognition
             </h2>
             <ul className="mt-2 space-y-1.5 text-xs font-sans text-[#073642] list-disc list-inside">
               {COMPETITIONS.map((c, idx) => (
                 <li key={idx}>
-                  <strong>{c.rank} place</strong> — {c.event} — {c.project}
+                  <strong>{c.rank} place ({c.badge})</strong> — {c.event} — {c.project}
+                  <span className="text-[#586E75] block ml-5 text-[11px]">{c.note}</span>
                 </li>
               ))}
-              <li>Featured three times in <em>The Telegraph</em> — "The Young Metro" for building edTech system (StudyMate AI) and ARIA at age 14</li>
-              <li>Selected for the <strong>Sarvam AI Startup Program</strong> with StudyMate AI</li>
-              <li>Winner of 10+ events across AI/ML, web development, and robotics</li>
+              <li>
+                <strong>Featured 3x in The Telegraph</strong> — "The Young Metro" publication, covered for building edTech systems (StudyMate AI) and autonomous disaster rovers (ARIA) at age 14.
+              </li>
+              <li>
+                <strong>Selected for Sarvam AI Startup Program</strong> — Official onboarding and production deployment of state-of-the-art Indic voice and document AI models.
+              </li>
+              <li>
+                <strong>36+ Shipped Systems in 2 Years</strong> — Built across IoT & automation, computer vision, robotics, embedded hardware, and full-stack AI applications.
+              </li>
+              <li>
+                <strong>Published Open-Weight Models & Datasets on Hugging Face</strong> — Released QiFu-v1 QLoRA VLM adapter and specialized UI/UX diagnostics dataset.
+              </li>
+              <li>
+                <strong>750+ LinkedIn Professional Network</strong> — Active engagement with research engineers, startup founders, and mentors.
+              </li>
+              <li>
+                <strong>Public AI Knowledge Graph Index</strong> — Indexed across Google and Gemini AI search modes for student AI/ML and robotics engineering in India.
+              </li>
             </ul>
           </div>
 
           {/* Section: Technical Skills */}
           <div className="mt-6">
             <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
-              Technical Skills
+              Technical Stack & Hardware Matrix
             </h2>
-            <div className="mt-2 space-y-1 text-xs font-sans text-[#073642]">
+            <div className="mt-2 space-y-1.5 text-xs font-sans text-[#073642]">
               <div>
-                <strong>Languages:</strong> Python, Java, C/C++, TypeScript, HTML5, CSS3
+                <strong>Languages:</strong> Python, Java, C/C++ (Embedded / FreeRTOS), TypeScript, JavaScript, HTML5, CSS3
               </div>
               <div>
-                <strong>AI/ML:</strong> PyTorch, Transformers, YOLOv8, MedGemma, DINOv3, OpenCV, NumPy, Pandas, TFLite
+                <strong>AI/ML & VLM:</strong> PyTorch, Hugging Face Transformers, YOLOv8, MedGemma 4B, Qwen3-VL, DINOv3, OpenCV, TFLite, NumPy, Pandas
               </div>
               <div>
-                <strong>Web & Backend:</strong> React, React Native (Expo), Flask, Node.js, Next.js
+                <strong>Systems, Graphs & Queues:</strong> Neo4j Graph DB (Cypher), Redis, BullMQ, SQLite, Supabase, Firebase Realtime
               </div>
               <div>
-                <strong>Databases & Queues:</strong> Neo4j, SQLite, Supabase, Redis, BullMQ
+                <strong>Voice & Multimodal APIs:</strong> Sarvam AI (Bulbul V3 TTS, STT, Translation), Groq LPU (sub-400ms TTFT), ElevenLabs, Gemini Live Multimodal API
               </div>
               <div>
-                <strong>Hardware & Edge:</strong> Arduino UNO Q, Raspberry Pi Zero 2W, ESP32, Radxa SBC, LoRa, BLE Mesh
-              </div>
-            </div>
-          </div>
-
-          {/* Section: Roles */}
-          <div className="mt-6">
-            <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
-              Roles & Experience
-            </h2>
-            <div className="mt-2 text-xs font-sans text-[#073642]">
-              <div>
-                <strong>Head of Department, AI/ML — HyperNova Technology</strong> | Leading technical strategy, project direction, and recruitment
+                <strong>Hardware & Edge Silicon:</strong> Radxa Cubie A7Z (NPU INT8), ESP32 / ESP32-CAM, Raspberry Pi Zero 2W, Arduino UNO Q / Nano, LoRa (868/433MHz), BLE Mesh 5.0
               </div>
             </div>
           </div>
@@ -167,17 +207,22 @@ export const AcademicDossierModal: React.FC<AcademicDossierModalProps> = ({ isOp
           {/* Section: Education */}
           <div className="mt-6">
             <h2 className="text-xs font-sans font-extrabold tracking-wider text-[#002B36] uppercase pb-1 border-b border-[#073642]/20">
-              Education
+              Education & Society Affiliations
             </h2>
-            <div className="mt-2 text-xs font-sans text-[#073642]">
-              <strong>M. P. Birla Foundation Higher Secondary School</strong> — Kolkata, India
-              <div className="text-[#586E75]">Class 9, ICSE</div>
+            <div className="mt-2 text-xs font-sans text-[#073642] space-y-1">
+              <div>
+                <strong>M. P. Birla Foundation Higher Secondary School (MPBFHSS)</strong> — Kolkata, India
+              </div>
+              <div className="text-[#586E75]">Class 9, ICSE Curriculum</div>
+              <div className="text-[#073642]">
+                <strong>Society Affiliation:</strong> Core Member, <em>LMNTR1X</em> (Official MPBFHSS Computer Science Club)
+              </div>
             </div>
           </div>
 
           {/* Section: Open To */}
-          <div className="mt-6 pt-2 border-t border-[#073642]/20 text-xs font-sans text-[#586E75]">
-            <strong>Open To:</strong> Research collaborations in AI, robotics, and edge AI · sponsor conversations · mentorship from engineers at serious AI companies · remote internships & part-time technical roles · hackathon team-ups.
+          <div className="mt-6 pt-3 border-t border-[#073642]/20 text-xs font-sans text-[#586E75]">
+            <strong>Open To:</strong> Research collaborations in AI/ML, multimodal vision, and robotics · Project & hardware sponsorship (SBCs, sensors, compute grants) · Mentorship from senior AI research engineers · Remote internships and part-time technical roles · High-impact hackathon team-ups.
           </div>
         </div>
       </div>
